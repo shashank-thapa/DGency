@@ -3,6 +3,9 @@ body{
     margin:0;
     font-family: 'Open Sans', sans-serif;
     background-color: #FAFBFE;
+    background-image: url(/assets/img/bannerbg@2x.png);
+    background-position: center;
+    background-repeat: repeat;
 }
 
 main{
@@ -61,11 +64,7 @@ nav ul li button:hover{
     background-color: rgba(29,212,253,1);
 }
 
-.bannermain{
-    background-image: url(/assets/img/bannerbg@2x.png);
-    background-position: center;
-    background-size: cover;
-    z-index: 3;
+.top{
 }
 
 .bannerbody{
@@ -211,9 +210,7 @@ div+div{
 }
 
 .aboutmain{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display:table;
     vertical-align: middle;
     margin: 0 auto;
 }
@@ -234,15 +231,18 @@ div+div{
 }
 
 .aboutimg{
-    display: inline;
+    display: table-cell;
+    width: 50%;
 }
 
 .aboutinfo{
     margin:0 auto;
     padding: 0;
     text-align: left;
-    display: inline-block;
-    width: 40%;
+    margin-left: 2%;
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
 }
 
 .aboutinfo .btn1{
@@ -258,4 +258,285 @@ div+div{
 
 .btn1:hover{
     background-color: rgba(29,212,253,1);;
+}
+
+.analysismain{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+
+.analysis{
+    margin-top:5%;
+    display: table;
+    text-align: center;
+}
+
+
+.analysisinfo{
+    margin:0 auto;
+    padding: 0;
+    text-align: left;
+    display: table-cell;
+}
+
+.analysis h2{
+    font-size: 2em;
+    display: block;
+    pointer-events: none;
+    color:#071735;
+    margin-bottom: -5px;
+}
+
+.analysis h3{
+    color:rgba(29,212,253,1);
+    font-size: 14px;
+    margin-bottom: -20px;
+    pointer-events: none;
+}
+
+.analysisimg{
+    display: table-cell;
+    width: 50%;
+}
+
+.analysisinfo{
+    margin:0 auto;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    width: 40%;
+}
+
+.analysisinfo ul{
+    list-style: none;
+    padding:0;
+}
+
+.fa-check-circle {
+    color:rgba(29,212,253,1);
+    font-size: 1.1em;
+}
+
+.team{
+    z-index: 0;
+    text-align: center;
+} 
+
+.team h2{
+    font-size: 2em;
+    pointer-events: none;
+    display: block;
+    color:#071735;
+    margin-bottom: -5px;
+    padding: 0 30%;
+}
+
+.team h4{
+    pointer-events: none;
+    font-size: 1em;
+}
+
+.team h3{
+    color:rgba(29,212,253,1);
+    font-size: 0.8em;
+    margin-bottom: -20px;
+    pointer-events: none;
+}
+
+.team .column{
+    display:inline-block;
+    width: 27%;
+    padding: 2% 2%;
+    vertical-align: middle;
+}
+
+.team .row{
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.team .row::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.team .row img{
+    padding-top: 5%;
+    width: 70%;
+    height: auto;
+}
+
+.team .card{
+    box-shadow: 0 11px 16px 0 rgba(61, 61, 61, 0.2); 
+    padding: 40px;
+    width: 75%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.team .card p{
+    font-size: 16px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .team .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+.card ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.card ul li{
+    display: inline;
+    padding: 5px;
+}
+
+.card ul li i{
+    font-size: 20px;
+}
+
+.card ul li a{
+    color:#3D59FA;
+}
+
+.newsletter{
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.subscription{
+    display: table;
+    background-color: #3D59FA;
+    width: 100%;
+    padding: 2%;
+    vertical-align: middle;
+}
+
+.newslettermain{
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.newsletter h2{
+    color:white;
+    padding-left: 10%;
+    text-align: left;
+    width: 100%;
+}
+
+.email{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding:25px;
+}
+
+.email input{
+    width: 100%;
+    border-radius: 5px;
+    padding:10px;
+}
+
+
+.checked{
+    color:orange;
+}
+
+.client{
+    z-index: 0;
+    text-align: center;
+} 
+
+.client h2{
+    font-size: 2em;
+    pointer-events: none;
+    display: block;
+    color:#071735;
+    margin-bottom: -5px;
+    padding: 0 25%;
+}
+
+.client h4{
+    pointer-events: none;
+    font-size: 1em;
+}
+
+.client h3{
+    color:rgba(29,212,253,1);
+    font-size: 0.8em;
+    margin-bottom: -20px;
+    pointer-events: none;
+}
+
+.client .column{
+    display:inline-block;
+    width: 27%;
+    padding: 2% 2%;
+    vertical-align: middle;
+}
+
+.client .row{
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.client .row::after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.client .row img{
+    padding-top: 5%;
+    width: 70%;
+    height: auto;
+}
+
+.client .card{
+    box-shadow: 0 11px 16px 0 rgba(61, 61, 61, 0.2); 
+    padding: 40px;
+    width: 75%;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.client .card p{
+    font-size: 16px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .team .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+.card ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
 }
